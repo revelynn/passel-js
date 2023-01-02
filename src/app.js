@@ -34,12 +34,12 @@ const token = process.env.TOKEN || 'past_token'
 //Paste your pins channel as a string
 //discordjs uses "Snowflakes" which are 64 bit signed Integers represented as strings.
 //Pasting as an integer will cause integer collisions
-const pinsChannel = '0'
+const pinsChannel = ['872870024602353715', '1050452057712246824']
 //Enter as comma seperated strings IE ['001', '002']
 var blacklistedChannels = []
 //Archival Behavior
-var lastPinArchive = true // set false if first pin gets archived.
-var sendAll = false
+var lastPinArchive = false // set false if first pin gets archived.
+var sendAll = true
 /**----------------------------------------End Configuration-------------------------------------------------------------**/
 
 
