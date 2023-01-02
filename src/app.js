@@ -38,7 +38,7 @@ const pinsChannel = '1050452057712246824'
 //Enter as comma seperated strings IE ['001', '002']
 var blacklistedChannels = []
 //Archival Behavior
-var lastPinArchive = true // set false if first pin gets archived.
+var lastPinArchive = false // set false if first pin gets archived.
 var sendAll = true
 /**----------------------------------------End Configuration-------------------------------------------------------------**/
 
