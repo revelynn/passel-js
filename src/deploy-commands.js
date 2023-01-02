@@ -5,9 +5,9 @@ const { Routes } = require('discord.js');
 
 /**---------------------------------------Start Configuration------------------------------------------------------------**/
 //Paste your bot client id
-const clientId = ''
+const clientId = '1028589891036127293'
 //Paste your guild id
-const guildId = ''
+const guildId = '692711261946904576'
 //Paste your discord bot token
 const token = ''
 /**----------------------------------------End Configuration-------------------------------------------------------------**/
