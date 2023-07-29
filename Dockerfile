@@ -1,23 +1,23 @@
-```bash
-
-# Use the official Node.js image as the base image
 
 FROM node:18
 
-# Set the working directory in the container
-
 WORKDIR /app
 
-# Copy the application files into the working directory
+COPY package.json /app
 
-COPY . /app
+# The error is caused because the package.json file is being copied, but not the package-lock.json file
+# So we need to copy both files in order to install the application dependencies
+
+COPY package-lock.json /app
 
 # Install the application dependencies
 
 RUN npm install
 
-# Define the entry point for the container
+# Now that we have both package.json and package-lock.json files copied, the application dependencies can be installed successfully
+
+# Copy the rest of the application files into the working directory
+
+COPY . /app
 
 CMD ["npm", "start"]
-
-```
